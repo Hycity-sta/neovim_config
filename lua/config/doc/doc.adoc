@@ -1,0 +1,28 @@
+catpp的那个主题中的fr开头的那个颜色表
+
+. overlay0 #737994
+. pink #f
+. overlay1 #
+. flamingo #
+. red #
+. overlay2 #
+. surface2 #
+. rosewater #
+. mauve #
+. subtext0 #
+. text #
+. peach #
+. subtext1 #
+. surface0 #
+. blue #
+. green #
+. lavender #
+. base #
+. crust #
+. teal #
+. mantle #
+. sapphire #
+. yellow #
+. sky #
+. maroon #
+. surface1 #
