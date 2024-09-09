@@ -64,9 +64,3 @@ require("catppuccin").setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme "catppuccin"
-
-
-
--- 主题用默认的, 上面那个先不用了
---vim.cmd.colorscheme "evening"
---vim.cmd([[hi EndOfBuffer guibg=#333333 guifg=#333333]])
