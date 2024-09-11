@@ -1,4 +1,4 @@
-require("basic") 
+require("basic") --
 require("mapping")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
