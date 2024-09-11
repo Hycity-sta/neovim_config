@@ -1,25 +1,10 @@
---vim.cmd([[set complete]])
-vim.cmd([[command! SnipC :NvimTreeOpen C:\Users\10068\AppData\Local\nvim\lua\lsp\snippet_lua\common_snippet]])
-vim.cmd([[command! SnipP :NvimTreeOpen C:\Users\10068\AppData\Local\nvim\lua\lsp\snippet_lua\postfix_snippet]])
 vim.cmd([[autocmd BufNewFile,BufRead *.cpp2 setfiletype cpp]])
 vim.cmd([[autocmd BufNewFile,BufRead *.mpp setfiletype cpp]])
 vim.cmd([[autocmd BufNewFile,BufRead *.ixx setfiletype cpp]])
-vim.cmd("command! SetLocation :silent :cd %:p:h") --设置目录为当前文件所在的目录
---vim.cmd([[syntax off]])
 
---设置目录后在当前目录下打开tree
-vim.cmd[[
-command! Tree :silent :cd %:p:h | :NvimTreeToggle .
-]]
 -- 编码
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'UTF-8'
-
--- jkhl 移动时光标周围保留8行
---vim.cmd([[
---set scrolloff =8
---set sidescrolloff =8
---]])
 
 -- 因为有了觉得文件树在编辑器里面不重要,所以可以把vim自带的文件树netrw给禁用了
 vim.g.loaded_netrw = 1
@@ -104,7 +89,6 @@ vim.o.showmatch = false -- 这个是自动高亮匹配符号, 但是插件的功
 
 vim.g.mapleader = " " -- 指定leader键
 vim.g.maplocalleader = " " -- 指定leader键
-
 
 --这个是调整c/cpp的缩进,在输入的时候自动进行调整
 --有需要再去查文档来修改, 在cindent里面
