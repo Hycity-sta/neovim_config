@@ -38,11 +38,14 @@ local this_config = {
 
 local lazy_package_desc = { 
     "catppuccin/nvim",
-    enabled = true,
+    enabled = false,
     priority = 1000,
     main = this_config,
     init = function()
         vim.cmd("colorscheme catppuccin-latte")
+        --vim.cmd("colorscheme catppuccin-frappe")
+        --vim.cmd("colorscheme catppuccin-macchiato")
+        --vim.cmd("colorscheme catppuccin-mocha")
     end
 }
 

@@ -13,7 +13,7 @@ local this_config =
         ahead_line = 5,
         chars = { "│" },
         delay = 100,
-        style = { "#cfcac4" },
+        style = { "#000000" },
     }
 }
 

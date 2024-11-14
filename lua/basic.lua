@@ -15,12 +15,12 @@ vim.wo.number = true
 vim.wo.relativenumber = false
 vim.wo.cursorline = true -- 高亮所在行
 vim.wo.cursorcolumn= false-- 高亮所在列
-vim.wo.signcolumn = "yes" -- 显示左侧图标指示列
+vim.wo.signcolumn = "no" -- 显示左侧图标指示列
 
 -- 右侧参考线，超过表示代码太长了，考虑换行
 vim.wo.colorcolumn = "99999"
 
--- 缩进2个空格等于一个Tab
+-- 缩进4空格等于一个Tab
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
 vim.o.softtabstop = 4
@@ -29,7 +29,7 @@ vim.o.shiftround = true
 vim.o.shiftwidth = 4
 vim.bo.shiftwidth = 4
 
--- 如果为true, 那么按下tab就等于按下shfttabstop个空格
+-- 如果为true, 那么按下tab就等于按下shifttabstop个空格
 vim.o.expandtab = true
 vim.bo.expandtab = true
 
@@ -42,7 +42,7 @@ vim.o.smartindent = false
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hlsearch = false -- 搜索高亮
-vim.o.incsearch = true -- 边输入边搜索
+vim.o.incsearch = false-- 边输入边搜索
 
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
@@ -71,7 +71,7 @@ vim.o.splitright = true
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- 样式
-vim.o.background = "dark"
+vim.o.background = "light"
 vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
@@ -92,4 +92,7 @@ vim.g.maplocalleader = " " -- 指定leader键
 
 --这个是调整c/cpp的缩进,在输入的时候自动进行调整
 --有需要再去查文档来修改, 在cindent里面
-vim.o.cinoptions = "N-s,g0,j1,{0,J1"
+vim.o.cinoptions = "g4,j1,{0,J1,h0"
+-- 第一个是命名空间之后的缩进, s是shiftwidth指定的大小
+
+
