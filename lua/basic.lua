@@ -1,6 +1,8 @@
 vim.cmd([[autocmd BufNewFile,BufRead *.cpp2 setfiletype cpp]])
 vim.cmd([[autocmd BufNewFile,BufRead *.mpp setfiletype cpp]])
 vim.cmd([[autocmd BufNewFile,BufRead *.ixx setfiletype cpp]])
+vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
+vim.cmd([[colorscheme hycity]])
 
 -- 编码
 vim.g.encoding = "UTF-8"
@@ -94,5 +96,3 @@ vim.g.maplocalleader = " " -- 指定leader键
 --有需要再去查文档来修改, 在cindent里面
 vim.o.cinoptions = "g4,j1,{0,J1,h0"
 -- 第一个是命名空间之后的缩进, s是shiftwidth指定的大小
-
-

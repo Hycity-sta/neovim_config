@@ -6,7 +6,7 @@ endif
 " inform C syntax that the file was included from cpp.vim
 let b:filetype_in_cpp_family = 1
 
-:hi clear
+" The basic 16 colors
 
 syn keyword cppWord if else while for switch case goto operator continue default return
 syn keyword cppWord const constexpr consteval constinit
@@ -21,7 +21,11 @@ syn keyword cppWord decltype sizeof template this thread_local typedef typeid ty
 syn keyword cppWord delete new operator
 syn keyword cppWord final override
 
-hi def link cppWord Statement
+
+syn match cppComment "//.*"
+
+execute printf("hi cppWord guifg=%s gui=bold", hycity_cyan)
+execute printf("hi cppComment guifg=%s", hycity_red)
 
 let b:current_syntax = "cpp"
 

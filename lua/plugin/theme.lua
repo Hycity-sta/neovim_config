@@ -42,7 +42,7 @@ local lazy_package_desc = {
     priority = 1000,
     main = this_config,
     init = function()
-        vim.cmd("colorscheme catppuccin-latte")
+        --vim.cmd("colorscheme catppuccin-latte")
         --vim.cmd("colorscheme catppuccin-frappe")
         --vim.cmd("colorscheme catppuccin-macchiato")
         --vim.cmd("colorscheme catppuccin-mocha")
