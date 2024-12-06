@@ -10,7 +10,7 @@ let hycity_black = "#100F0F"
 let hycity_black_x = "#6F6E69"
 let hycity_red = "#D14D41"
 let hycity_red_x = "#AF3029"
-let hycity_green = "#879A39"
+let hycity_green = "#009933"
 let hycity_green_x = "#66800B"
 let hycity_yellow = "#D0A215"
 let hycity_yellow_x = "#AD8301"
@@ -23,6 +23,7 @@ let hycity_cyan_x = "#24837B"
 let hycity_white = "#FFFCF0"
 let hycity_white_x = "#F2F0E5"
 let hycity_cursor_line = "#ECEBD5"
+let hycity_purple = "#995CCC"
 
 execute printf("hi Normal guibg=%s",hycity_white)
 execute printf("hi CursorLine guibg=%s",hycity_cursor_line)

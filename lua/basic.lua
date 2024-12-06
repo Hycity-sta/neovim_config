@@ -94,5 +94,5 @@ vim.g.maplocalleader = " " -- 指定leader键
 
 --这个是调整c/cpp的缩进,在输入的时候自动进行调整
 --有需要再去查文档来修改, 在cindent里面
-vim.o.cinoptions = "g4,j1,{0,J1,h0"
+vim.o.cinoptions = "g4,p4,i4,{0,h4"
 -- 第一个是命名空间之后的缩进, s是shiftwidth指定的大小

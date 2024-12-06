@@ -12,8 +12,8 @@ local this_config =
         use_treesitter = false,
         ahead_line = 5,
         chars = { "│" },
-        delay = 100,
-        style = { "#000000" },
+        delay = 10,
+        style = { "#CCCCCC" },
     }
 }
 
