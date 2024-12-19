@@ -20,13 +20,13 @@ syn keyword cpp_word const_cast dynamic_cast reinterpret_cast  static_cast
 syn keyword cpp_word decltype sizeof template this thread_local typedef typeid typename using
 syn keyword cpp_word delete new 
 syn keyword cpp_word co_await co_return co_yield
-execute printf("hi cpp_word guifg=%s gui=italic", hycity_black)
+execute printf("hi cpp_word guifg=%s gui=bold,italic", hycity_black)
 
 syn keyword cpp_decaled_word class struct auto union enum concept namespace export module import
-execute printf("hi cpp_decaled_word guifg=%s gui=italic", hycity_purple)
+execute printf("hi cpp_decaled_word guifg=%s gui=bold,italic", hycity_black)
 
 syn keyword cpp_p_word private public protected
-execute printf("hi cpp_p_word guifg=%s gui=italic", hycity_blue)
+execute printf("hi cpp_p_word guifg=%s gui=italic,bold", hycity_black)
 
 syn match cpp_preprocess_word "#pragma"
 syn match cpp_preprocess_word "#define"
@@ -36,18 +36,19 @@ syn match cpp_preprocess_word "#else"
 syn match cpp_preprocess_word "#endif"
 execute printf("hi cpp_preprocess_word guifg=%s gui=italic", hycity_black)
 
-syn keyword cpp_important_word not nullptr new delete
-execute printf("hi cpp_important_word guifg=%s gui=bold", hycity_red)
+syn keyword cpp_important_word not nullptr new delete or and
+execute printf("hi cpp_important_word guifg=%s gui=bold,italic", hycity_red)
 
 syn match cpp_comment "//.*"
-execute printf("hi cpp_comment guifg=%s", hycity_red)
+execute printf("hi cpp_comment guifg=%s gui=italic", hycity_red)
 
 syn match cpp_range_mark_a "{"
 syn match cpp_range_mark_a "}"
-execute printf("hi cpp_range_mark_a guifg=%s gui=bold,italic", hycity_blue)
+execute printf("hi cpp_range_mark_a guifg=%s gui=bold", hycity_black)
+
 syn match cpp_range_mark_b "("
 syn match cpp_range_mark_b ")"
-execute printf("hi cpp_range_mark_b guifg=%s gui=bold,italic", hycity_green)
+execute printf("hi cpp_range_mark_b guifg=%s gui=bold", hycity_black)
 
 let b:current_syntax = "cpp"
 
